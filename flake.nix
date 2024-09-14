@@ -46,7 +46,12 @@
           cargoToml = ./Cargo.toml;
           src = ./src;
         };
-        cargoLock.lockFile = ./Cargo.lock;
+        cargoLock = {
+          lockFile = ./Cargo.lock;
+          outputHashes = {
+            "rnix-0.10.2" = "sha256-ZHfJFCl+atYUQBBIw3ILHPvI2kmeNHJhOaa1gPjAfVg=";
+          };
+        };
 
         passthru.tests = {
           version = final.testVersion {package = prev.alejandra;};
