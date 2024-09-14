@@ -383,8 +383,7 @@ dependencies = [
 [[package]]
 name = "rnix"
 version = "0.10.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8024a523e8836f1a5d051203dc00d833357fee94e351b51348dfaeca5364daa9"
+source = "git+https://github.com/q60/rnix-parser?branch=pipe-operator-support#ba8ffcdda2ff556ccfacbeb7c92cfa96c7ac28f3"
 dependencies = [
  "cbitset",
  "rowan",

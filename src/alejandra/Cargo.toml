@@ -1,5 +1,5 @@
 [dependencies]
-rnix = "0"
+rnix = { git = "https://github.com/q60/rnix-parser", branch = "pipe-operator-support" }
 rowan = "0.12.6" # follows rnix
 
 [target.aarch64-unknown-linux-musl.dependencies.mimalloc]
